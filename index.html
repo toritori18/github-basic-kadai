@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一般常識クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>一般常識クイズ</h1>
+    </header>
+
+    <!-- クイズ画面 -->
+    <main id="quiz-screen">
+      <div class="progress-bar-wrap">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <p class="question-count" id="question-count">問題 1 / 5</p>
+
+      <div class="question-card">
+        <p class="question-text" id="question-text"></p>
+      </div>
+
+      <div class="choices" id="choices"></div>
+
+      <div class="feedback" id="feedback" hidden>
+        <span class="feedback-icon" id="feedback-icon"></span>
+        <span class="feedback-message" id="feedback-message"></span>
+      </div>
+
+      <button class="btn-next" id="btn-next" hidden>次の問題へ</button>
+    </main>
+
+    <!-- 結果画面 -->
+    <section id="result-screen" hidden>
+      <div class="result-card">
+        <p class="result-label">結果</p>
+        <p class="result-score" id="result-score"></p>
+        <p class="result-comment" id="result-comment"></p>
+      </div>
+      <button class="btn-retry" id="btn-retry">もう一度挑戦する</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
